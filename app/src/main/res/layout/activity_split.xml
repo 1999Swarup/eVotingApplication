@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".split"
+    android:background="@drawable/neon">
+
+   <!-- <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationViewAgents"
+        android:layout_width="353dp"
+        android:layout_height="219dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="agent1.json"
+        app:lottie_loop="true"
+        app:lottie_url="REPLACE_JSON_URL" />  -->
+
+    <!-- <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationViewClients"
+        android:layout_width="408dp"
+        android:layout_height="205dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="EasyAgentsSchedule.json"
+        app:lottie_loop="true"
+        app:lottie_url="REPLACE_JSON_URL" />      -->
+
+    <Button
+        android:id="@+id/ForPollCreators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pollCreatorWard"
+        android:text="@string/create_poll"
+        app:backgroundTint="#0C31EB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/ForVoters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="votersWard"
+        android:text="@string/For_voters"
+        app:backgroundTint="#1010F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872"
+        tools:ignore="UsingOnClickInXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

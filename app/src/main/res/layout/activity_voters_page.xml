@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VotersPage"
+    android:background="@drawable/ic_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:layout_marginBottom="100sp"
+        android:scrollbars="vertical|horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:verticalScrollbarPosition="left"
+            android:background="@android:color/holo_orange_dark"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/votingPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:text="@string/please_write_the_name_you_want_to_vote_for"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic" />
+
+
+                    <TextView
+                        android:id="@+id/candidates_names"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:background="@android:color/white"
+                        android:textColor="@android:color/black"/>
+
+
+                <TextView
+                    android:id="@+id/candidate_u_vote"
+                    android:layout_width="wrap_content"
+                    android:text="@string/vote_for"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:id="@+id/votedCandidateName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@android:color/holo_orange_dark"
+                    android:autofillHints="Candidate Name"
+                    android:inputType="textPersonName"
+                    tools:ignore="LabelFor" />
+
+                <Button
+                    android:id="@+id/button_submit_vote"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/holo_orange_light"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:onClick="voted"
+                    android:text="@string/submit_vote"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:backgroundTint="#FF3D00"
+                    tools:ignore="UsingOnClickInXml" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "141233316893",
+    "project_id": "itermad",
+    "storage_bucket": "itermad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141233316893:android:f00215a48e73e929bbd2f4",
+        "android_client_info": {
+          "package_name": "com.example.evote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141233316893-h0n3k8qdiqo3dpu697qvmmt2ktgedksp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR9lYfTdmAp1rYJk2gyui2v_x6k-TOJ9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141233316893-h0n3k8qdiqo3dpu697qvmmt2ktgedksp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
