@@ -5,7 +5,7 @@
 "# eVotingApplication" 
 
 
-Video explaning the results of my ode : https://www.youtube.com/watch?v=sk-9KVTfdOU&t=24s
+Video explaning the results of my code : https://www.youtube.com/watch?v=sk-9KVTfdOU&t=24s
 
 Important Functionalities
 
